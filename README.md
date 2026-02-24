@@ -4,7 +4,6 @@ Student Number: 22170262
 
 
 ## Aims
-
 The aim of this assigment is to: 
 >• Classify the echoes in leads and sea ice and produce an average echo shape as well as standard deviation for these two classes.
 
@@ -12,8 +11,6 @@ The aim of this assigment is to:
 
 
 ## Getting Started - Prerequisites + Installation
-
-
 ### Prerequisites
 
 In order to complete the data processing the code needs to be mounted onto Google Drive.
@@ -29,10 +26,18 @@ In order to complete the data processing the code needs to be mounted onto Googl
   pip install rasterio
   pip install netCDF4
   ```
-#### Sentinel
+#### Sentinel Data must also be downloaded
+* These files include the following:
+  ```sh
+  Sentinel 2 Data
+  S2A_MSIL1C_20190301T235611_N0207_R116_T01WCU_20190302T014622.SAFE/GRANULE/L1C_T01WCU_A019275_20190301T235610/IMG_DATA/
+  Sentinel 3 Data
+  S3A_SR_2_LAN_SI_20190307T005808_20190307T012503_20230527T225016_1614_042_131______LN3_R_NT_005.SEN3
+  ```
+  
 # K-Means and GMM
 ## K-Means Clustering [1]
-K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data {cite}macqueen1967some. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
+K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [2]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
 
 ### Why K-means for Clustering?
 
