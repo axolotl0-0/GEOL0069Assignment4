@@ -2,6 +2,8 @@
 GEOL0069 AI4EO Assignment 4
 Student Number: 22170262
 
+## About This Project
+
 ## Aims
 The aim of this assigment is to: 
 >• Classify the echoes in leads and sea ice and produce an average echo shape as well as standard deviation for these two classes.
@@ -16,8 +18,15 @@ The aim of this assigment is to:
     <li><a href="#Getting-Started---Prerequisites-+-Installation">Getting Started - Prerequisites + Installation</a>
     <li><a href="#K-Means-and-GMM">K-Means and GMM</a></li>
     <li><a href="#notebook-roadmap">Notebook Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+      <ul>
+       <li><a href="#Image Classification - Sentinel-2 Imagery">Image Classification - Sentinel-2 Imagery</a></li>
+       <li><a href="#Altimetry Classification - Sentinel-3 Dataset">Altimetry Classification - Sentinel-3 Dataset</a></li>
+        <li><a href="#Plots of mean and standard deviation for each class">Plots of mean and standard deviation for each class</a></li>
+        <li><a href="#Waveform Aligment">Waveform Aligment</a></li>
+        <li><a href="#Comparison with ESA data">Comparison with ESA Data</a></li>
+       </ul>
+    </li>
+    <li><a href="#references">References</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -165,7 +174,7 @@ The following are produced:
 *    **Histogram** of **peak** positions. The aligned distribution (red) should be narrower.
 *    **Mean waveform per class**. After alignment the mean leading edge becomes sharper because individual waveforms are better registered.
 
-## Compare with ESA data
+## Comparison with ESA data
 We then compare the results obtained with the ESA dataset.
 
 In the ESA dataset, sea ice = 1 and lead = 2. Therefore, we need to subtract 1 from it so our predicted labels are comparable with the official product labels.
