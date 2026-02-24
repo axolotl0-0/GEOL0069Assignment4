@@ -23,6 +23,15 @@ In order to complete the data processing the code needs to be mounted onto Googl
   drive.mount('/content/drive')
   ```
 # K-Means Clustering
+K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data {cite}macqueen1967some. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
+
+## Key Components of K-means
+*   Choosing K: The number of clusters (k) is a parameter that needs to be specified before applying the algorithm.
+*   Centroids Initialization: The initial placement of the centroids can affect the final results.
+*   Assignment Step: Each data point is assigned to its nearest centroid, based on the squared Euclidean distance.
+*   Update Step: The centroids are recomputed as the center of all the data points assigned to the respective cluster.
+
+The assignment and update steps are repeated iteratively until the centroids no longer move significantly, meaning the within-cluster variation is minimised. This iterative process ensures that the algorithm converges to a result, which might be a local optimum.
 
 # Gaussian Mixture Models
 
