@@ -23,6 +23,7 @@ Student Number: 22170262
         <li><a href="#plots-of-mean-and-standard-deviation-for-each-class">Plots of mean and standard deviation for each class</a></li>
         <li><a href="#waveform-aligment">Waveform Aligment</a></li>
         <li><a href="#comparison-with-esa-data">Comparison with ESA Data</a></li>
+        <li><a href="#results-and-conclusions">Results and Conclusions</a></li>
       </ul>
     </li>
     <li><a href="#references">References</a></li>
@@ -32,6 +33,9 @@ Student Number: 22170262
 </details>
 
 ## About This Project
+
+
+This project first uses 
 
 ## Aims
 The aim of this assigment is to: 
@@ -212,7 +216,10 @@ Finally we quantify the echo classification against the ESA official classificat
   print("\nClassification Report:")
   print(class_report)
   ```
+## Results and Conclusions
+As the classification gave 22 false postives, and 24 false negatives, this means that out of 12195 samples there were only 46 errors. This suggests high precision of the model in classifying sea ice vs leads. Furthermore the f1 score is between 0.99-1.00 which suggests the model successfully finds almost (/all) real examples of each class. However there is also class imbalance of sea ice vs leads, but this is to be expected given the physical data.
 
+In conclusion the Gaussian Mixture Model successfully separates sea ice and leads, achieving high classification similarity with ESA surface type flags.
 
 # References
 [1] Pattern recognition and machine learning. Christopher M. Bishop. 2006.
