@@ -11,3 +11,32 @@ from sklearn.mixture import GaussianMixture
 import matplotlib.pyplot as plt
 import numpy as np
 
+# K-Means Implementation Packages
+import rasterio
+import numpy as np
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+#GMM Implementation Packages
+import rasterio
+import numpy as np
+from sklearn.mixture import GaussianMixture
+import matplotlib.pyplot as plt
+
+#Altimetry Classification Functions Needed
+from netCDF4 import Dataset
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.interpolate import griddata
+import numpy.ma as ma
+import glob
+from matplotlib.patches import Polygon
+import scipy.spatial as spatial
+from scipy.spatial import KDTree
+from sklearn.cluster import KMeans, DBSCAN
+from sklearn.preprocessing import StandardScaler,MinMaxScaler
+from sklearn.mixture import GaussianMixture
+from scipy.cluster.hierarchy import linkage, fcluster
+
+#Comparing with ESA Data
+from sklearn.metrics import confusion_matrix, classification_report
