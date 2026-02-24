@@ -30,6 +30,7 @@ In order to complete the data processing the code needs to be mounted onto Googl
 
 # Contact
 Serena Trant - serena.trant.23@ucl.ac.uk - 22170262
+
 Project link: https://github.com/axolotl0-0/GEOL0069Assignment4
 
 # Acknowledgments
