@@ -106,12 +106,12 @@ Gaussian Mixture Models are particularly powerful in scenarios where:
 *   **GMM** - A basic implementation of the Gaussian Mixture Model. This serves as an initial guide for understanding the model and applying it to the later data analysis.
 
 ## Image Classification - Sentinel-2 Imagery
-We use these unsupervised machine learning methods to apply them to classification tasks focusing specifically on distinguishing between sea ice and leads in Sentinel-2 imagery.
+We use these unsupervised machine learning methods to apply them to classification tasks focusing specifically on distinguishing between sea ice and leads in Sentinel-2 imagery. The optical brightness differences seperate sea ice and leads.
 *   **K-means Clustering Implementation** - Code implements K-means clustering on the Sentinel-2 Bands.
 *   **GMM Implementation** - GMM Implementation on Sentinel 2 data.
 
 ## Altimetry Classification - Sentinel-3 Dataset
-The application of the previous unsupervised methods to altimetry classification tasks, focusing specifically on distinguishing between sea ice and leads in Sentinel-3 altimetry dataset.
+This is the application of the previous unsupervised methods to altimetry classification tasks, focusing specifically on distinguishing between sea ice and leads in Sentinel-3 altimetry dataset. This data is radar data, using the peakiness (how sharp the radar return is) the data is able to be seperated into leads (sharp peak) and sea ice (broader).
 
 #### Read in Functions Needed
 Prior to the modeling process, it's crucial to preprocess the data to ensure compatibility with the analytical models. This involves transforming the raw data into variables, such as peakniness and stack standard deviation (SSD), etc. The functions needed for this are below:
@@ -132,6 +132,8 @@ Prior to the modeling process, it's crucial to preprocess the data to ensure com
   from scipy.cluster.hierarchy import linkage, fcluster
   ```
 #### Filtering the data
+We filter the surface types to keep only sea ice and leads, and to remove other types.
+
 #### Removing NaN values from data
 There are some NaN values in the dataset so one way to deal with this is to delete them.
 
