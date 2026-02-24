@@ -46,6 +46,27 @@ The assignment and update steps are repeated iteratively until the centroids no 
 Gaussian Mixture Models (GMM) are a probabilistic model for representing normally distributed subpopulations within an overall population. The model assumes that the data is generated from a mixture of several Gaussian distributions, each with its own mean and variance {cite}reynolds2009gaussian, mclachlan2004finite. GMMs are widely used for clustering and density estimation, as they provide a method for representing complex distributions through the combination of simpler ones.
 
 # Notebook Roadmap
+## Basic Code Implementation
+### K-means Clustering
+Introductory code for K-Means Clustering
+### GMM
+A basic implementation of the Gaussian Mixture Model. This serves as an initial guide for understanding the model and applying it to the later data analysis.
+
+## Image Classification - Sentinel-2 imagery
+We use these unsupervised machine learning methods to apply them to classification tasks focusing specifically on distinguishing between sea ice and leads in Sentinel-2 imagery.
+### K-means Clustering Implementation
+Code implements K-means clustering on the Sentinel-2 Bands.
+### GMM Implementation
+GMM Implementation on Sentinel 2 data.
+
+
+
+
+
+
+
+
+
 
 # References
 [1] Pattern recognition and machine learning. Christopher M. Bishop. 2006.
