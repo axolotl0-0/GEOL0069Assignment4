@@ -71,7 +71,7 @@ Gaussian Mixture Models are particularly powerful in scenarios where:
 *    **K-means Clustering** - Introductory code for K-Means Clustering
 *   **GMM** - A basic implementation of the Gaussian Mixture Model. This serves as an initial guide for understanding the model and applying it to the later data analysis.
 
-## Image Classification - Sentinel-2 imagery
+## Image Classification - Sentinel-2 Imagery
 We use these unsupervised machine learning methods to apply them to classification tasks focusing specifically on distinguishing between sea ice and leads in Sentinel-2 imagery.
 *   **K-means Clustering Implementation** - Code implements K-means clustering on the Sentinel-2 Bands.
 *   **GMM Implementation** - GMM Implementation on Sentinel 2 data.
@@ -111,8 +111,30 @@ The code below runs the GMM Model, however it is also possible to subsitute for 
   ```
 ## Plots of mean and standard deviation for each class
 We then plot the mean waveform and standard deviation for each class
+* Code for mean and standard deviation
+  ```sh
+  mean_ice = np.mean(waves_cleaned[clusters_gmm==0],axis=0)
+  std_ice = np.std(waves_cleaned[clusters_gmm==0], axis=0)
 
+  plt.plot(mean_ice, label='ice')
+  plt.fill_between(range(len(mean_ice)), mean_ice - std_ice, mean_ice + std_ice, alpha=0.3)
 
+  mean_lead = np.mean(waves_cleaned[clusters_gmm==1],axis=0)
+  std_lead = np.std(waves_cleaned[clusters_gmm==1], axis=0)
+
+  plt.plot(mean_lead, label='lead')
+  plt.fill_between(range(len(mean_lead)), mean_lead - std_lead, mean_lead + std_lead, alpha=0.3)
+
+  plt.title('Plot of mean and standard deviation for each class')
+  plt.legend()
+  ```
+### Plot Echos
+We can then plot all the echos, as well as the echos for the lead cluster and the sea ice cluster.
+### Scatter Plots of Clustered Data
+This  visualizes the clustering results using scatter plots, where different colors represent different clusters (`clusters_gmm`).
+
+## Physical Waveform Alignment
+To compare waveforms on a common footing we can **align** them using the known orbit geometry. This physically-based approach was developed at the [Alfred Wegener Institute (AWI) [x]
 
 
 
@@ -125,7 +147,7 @@ We then plot the mean waveform and standard deviation for each class
 
 [2] SOME METHODS FOR CLASSIFICATION AND ANALYSIS OF MULTIVARIATE OBSERVATIONS. J. MACQUEEN. 1967
 
-Alfred Wegener Institute (AWI) Physical Waveform Alignment
+[x] Alfred Wegener Institute (AWI) Physical Waveform Alignment
 https://gitlab.awi.de/siteo/aligned-waveform-generator
 
 # Contact
