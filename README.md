@@ -45,20 +45,61 @@ The assignment and update steps are repeated iteratively until the centroids no 
 ## Gaussian Mixture Models (GMM)
 Gaussian Mixture Models (GMM) are a probabilistic model for representing normally distributed subpopulations within an overall population. The model assumes that the data is generated from a mixture of several Gaussian distributions, each with its own mean and variance {cite}reynolds2009gaussian, mclachlan2004finite. GMMs are widely used for clustering and density estimation, as they provide a method for representing complex distributions through the combination of simpler ones.
 
+### Why Gaussian Mixture Models for Clustering?
+Gaussian Mixture Models are particularly powerful in scenarios where:
+*   **Soft clustering is needed:** Unlike K-means, GMM provides the probability of each data point belonging to each cluster, offering a soft classification and understanding of the uncertainties in our data.
+*   **Flexibility in cluster covariance:** GMM allows for clusters to have different sizes and different shapes, making it more flexible to capture the true variance in the data.
+
+### Advantages of GMM
+
+*    **Soft Clustering**: Provides a probabilistic framework for soft clustering, giving more information about the uncertainties in the data assignments.
+*    **Cluster Shape Flexibility**: Can adapt to ellipsoidal cluster shapes, thanks to the flexible covariance structure.
+
 # Notebook Roadmap
-## Basic Code Implementation
-### K-means Clustering
-Introductory code for K-Means Clustering
-### GMM
-A basic implementation of the Gaussian Mixture Model. This serves as an initial guide for understanding the model and applying it to the later data analysis.
+### Basic Code Implementation
+*    **K-means Clustering** - Introductory code for K-Means Clustering
+*   **GMM** - A basic implementation of the Gaussian Mixture Model. This serves as an initial guide for understanding the model and applying it to the later data analysis.
 
 ## Image Classification - Sentinel-2 imagery
 We use these unsupervised machine learning methods to apply them to classification tasks focusing specifically on distinguishing between sea ice and leads in Sentinel-2 imagery.
-### K-means Clustering Implementation
-Code implements K-means clustering on the Sentinel-2 Bands.
-### GMM Implementation
-GMM Implementation on Sentinel 2 data.
+*   **K-means Clustering Implementation** - Code implements K-means clustering on the Sentinel-2 Bands.
+*   **GMM Implementation** - GMM Implementation on Sentinel 2 data.
 
+## Altimetry Classification - Sentinel-3 Dataset
+The application of the previous unsupervised methods to altimetry classification tasks, focusing specifically on distinguishing between sea ice and leads in Sentinel-3 altimetry dataset.
+
+#### Read in Functions Needed
+Prior to the modeling process, it's crucial to preprocess the data to ensure compatibility with the analytical models. This involves transforming the raw data into variables, such as peakniness and stack standard deviation (SSD), etc. The functions needed for this are below:
+* Functions
+  ```sh
+  from netCDF4 import Dataset
+  import numpy as np
+  import matplotlib.pyplot as plt
+  from scipy.interpolate import griddata
+  import numpy.ma as ma
+  import glob
+  from matplotlib.patches import Polygon
+  import scipy.spatial as spatial
+  from scipy.spatial import KDTree
+  from sklearn.cluster import KMeans, DBSCAN
+  from sklearn.preprocessing import StandardScaler,MinMaxScaler
+  from sklearn.mixture import GaussianMixture
+  from scipy.cluster.hierarchy import linkage, fcluster
+  ```
+#### Filtering the data
+#### Removing NaN values from data
+There are some NaN values in the dataset so one way to deal with this is to delete them.
+
+### Running the GMM model 
+The code below runs the GMM Model, however it is also possible to subsitute for K-Means model or another preferred model.
+* Code
+  ```sh
+  gmm = GaussianMixture(n_components=2, random_state=0)
+  gmm.fit(data_cleaned)
+  clusters_gmm = gmm.predict(data_cleaned)
+  ```
+## Plots of mean and standard deviation for each class
+We then plot the mean waveform and standard deviation for each class
 
 
 
