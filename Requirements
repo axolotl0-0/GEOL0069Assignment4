@@ -1,3 +1,13 @@
 # Requirements
 Python packages required to run the code and classification proccess.
 
+# Python packages for K-means clustering
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Python packages for GMM
+from sklearn.mixture import GaussianMixture
+import matplotlib.pyplot as plt
+import numpy as np
+
