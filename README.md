@@ -171,7 +171,7 @@ This  visualizes the clustering results using scatter plots, where different col
 
 ## Waveform Aligment
 ### Physical Waveform Alignment
-To compare waveforms on a common footing we can **align** them using the known orbit geometry. This physically-based approach was developed at the Alfred Wegener Institute (AWI) [x]
+To compare waveforms on a common footing we can **align** them using the known orbit geometry. This physically-based approach was developed at the Alfred Wegener Institute (AWI) [5]
 
 ### Effect of alignment on individual waveforms
 We then look at the effect of alignment on individual waveforms, where we compare before and after the alignment.
@@ -223,7 +223,7 @@ Finally we quantify the echo classification against the ESA official classificat
 
 [4] McLachlan, G. and Peel, D. (2004) Finite Mixture Models. Wiley, Hoboken.
 
-[x] Alfred Wegener Institute (AWI) Physical Waveform Alignment
+[5] Alfred Wegener Institute (AWI) Physical Waveform Alignment
 https://gitlab.awi.de/siteo/aligned-waveform-generator
 
 # Contact
