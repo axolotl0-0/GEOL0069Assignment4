@@ -1,4 +1,4 @@
-# Leads and Sea Ice Echo Classification using Sentinel-2 optical data and Sentinel-3 altimetry data.
+# Echoes in Leads and Sea Ice Classification using Sentinel-2 optical data and Sentinel-3 altimetry data.
 GEOL0069 AI4EO Assignment 4
 Student Number: 22170262
 
