@@ -133,8 +133,21 @@ We can then plot all the echos, as well as the echos for the lead cluster and th
 ### Scatter Plots of Clustered Data
 This  visualizes the clustering results using scatter plots, where different colors represent different clusters (`clusters_gmm`).
 
-## Physical Waveform Alignment
-To compare waveforms on a common footing we can **align** them using the known orbit geometry. This physically-based approach was developed at the [Alfred Wegener Institute (AWI) [x]
+## Waveform Aligment
+### Physical Waveform Alignment
+To compare waveforms on a common footing we can **align** them using the known orbit geometry. This physically-based approach was developed at the Alfred Wegener Institute (AWI) [x]
+
+### Effect of alignment on individual waveforms
+We then look at the effect of alignment on individual waveforms, where we compare before and after the alignment.
+
+### Aggregate alignment comparison
+This code produces a figure which summarises the alignment effect across all waveforms.
+The following are produced:
+*    **Echogram** **before** and **after** alignment. A tighter bright band indicates better alignment.
+*    **Histogram** of **peak** positions. The aligned distribution (red) should be narrower.
+*    **Mean waveform per class**. After alignment the mean leading edge becomes sharper because individual waveforms are better registered.
+
+
 
 
 
