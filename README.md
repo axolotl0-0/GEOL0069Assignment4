@@ -22,10 +22,19 @@ In order to complete the data processing the code needs to be mounted onto Googl
   from google.colab import drive
   drive.mount('/content/drive')
   ```
-# K-Means Clustering
+### Installation
+#### The following libaries need to be installed:
+* Rasterio and NetCDF
+  ```sh
+  pip install rasterio
+  pip install netCDF4
+  ```
+#### Sentinel
+# K-Means and GMM
+## K-Means Clustering
 K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data {cite}macqueen1967some. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
 
-## Key Components of K-means
+### Key Components of K-means
 *   Choosing K: The number of clusters (k) is a parameter that needs to be specified before applying the algorithm.
 *   Centroids Initialization: The initial placement of the centroids can affect the final results.
 *   Assignment Step: Each data point is assigned to its nearest centroid, based on the squared Euclidean distance.
@@ -33,9 +42,12 @@ K-means clustering is a type of unsupervised learning algorithm used for partiti
 
 The assignment and update steps are repeated iteratively until the centroids no longer move significantly, meaning the within-cluster variation is minimised. This iterative process ensures that the algorithm converges to a result, which might be a local optimum.
 
-# Gaussian Mixture Models
+## Gaussian Mixture Models (GMM)
+Gaussian Mixture Models (GMM) are a probabilistic model for representing normally distributed subpopulations within an overall population. The model assumes that the data is generated from a mixture of several Gaussian distributions, each with its own mean and variance {cite}reynolds2009gaussian, mclachlan2004finite. GMMs are widely used for clustering and density estimation, as they provide a method for representing complex distributions through the combination of simpler ones.
 
 # References
+Alfred Wegener Institute (AWI) Physical Waveform Alignment
+https://gitlab.awi.de/siteo/aligned-waveform-generator
 
 # Contact
 Serena Trant - serena.trant.23@ucl.ac.uk - 22170262
