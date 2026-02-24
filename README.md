@@ -5,22 +5,25 @@ Student Number: 22170262
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-this-project">About The Project</a>
-    <li><a href="#aims">Aims</a>
-    <li><a href="#Getting-Started---Prerequisites-+-Installation">Getting Started - Prerequisites + Installation</a>
-    <li><a href="#K-Means-and-GMM">K-Means and GMM</a></li>
-    <ul>
-       <li><a href="#K-Means clustering">K-Means Clustering</a></li>
-       <li><a href="#Gaussian Mixture Models (GMM)">Gaussian Mixture Models (GMM)</a></li>
-       </ul>
-    <li><a href="#notebook-roadmap">Notebook Roadmap</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#aims">Aims</a></li>
+    <li><a href="#getting-started---prerequisites--installation">Getting Started - Prerequisites + Installation</a></li>
+    <li>
+      <a href="#k-means-and-gmm">K-Means and GMM</a>
       <ul>
-       <li><a href="#Image Classification - Sentinel-2 Imagery">Image Classification - Sentinel-2 Imagery</a></li>
-       <li><a href="#Altimetry Classification - Sentinel-3 Dataset">Altimetry Classification - Sentinel-3 Dataset</a></li>
-        <li><a href="#Plots of mean and standard deviation for each class">Plots of mean and standard deviation for each class</a></li>
-        <li><a href="#Waveform Aligment">Waveform Aligment</a></li>
-        <li><a href="#Comparison with ESA data">Comparison with ESA Data</a></li>
-       </ul>
+        <li><a href="#k-means-clustering">K-Means Clustering</a></li>
+        <li><a href="#gaussian-mixture-models-gmm">Gaussian Mixture Models (GMM)</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#notebook-roadmap">Notebook Roadmap</a>
+      <ul>
+        <li><a href="#image-classification---sentinel-2-imagery">Image Classification - Sentinel-2 Imagery</a></li>
+        <li><a href="#altimetry-classification---sentinel-3-dataset">Altimetry Classification - Sentinel-3 Dataset</a></li>
+        <li><a href="#plots-of-mean-and-standard-deviation-for-each-class">Plots of mean and standard deviation for each class</a></li>
+        <li><a href="#waveform-aligment">Waveform Aligment</a></li>
+        <li><a href="#comparison-with-esa-data">Comparison with ESA Data</a></li>
+      </ul>
     </li>
     <li><a href="#references">References</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -62,8 +65,8 @@ In order to complete the data processing the code needs to be mounted onto Googl
   ```
   
 # K-Means and GMM
-## K-Means Clustering [1]
-K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [2]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
+## K-Means Clustering
+K-means clustering [1] is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data [2]. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
 
 ### Why K-means for Clustering?
 
