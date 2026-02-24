@@ -88,7 +88,7 @@ The assignment and update steps are repeated iteratively until the centroids no 
 - **Ease of interpretation**: The results of k-means clustering are easy to understand and interpret.
 
 ## Gaussian Mixture Models (GMM)
-Gaussian Mixture Models (GMM) are a probabilistic model for representing normally distributed subpopulations within an overall population. The model assumes that the data is generated from a mixture of several Gaussian distributions, each with its own mean and variance {cite}reynolds2009gaussian, mclachlan2004finite. GMMs are widely used for clustering and density estimation, as they provide a method for representing complex distributions through the combination of simpler ones.
+Gaussian Mixture Models (GMM) are a probabilistic model for representing normally distributed subpopulations within an overall population. The model assumes that the data is generated from a mixture of several Gaussian distributions, each with its own mean and variance [3],[4]. GMMs are widely used for clustering and density estimation, as they provide a method for representing complex distributions through the combination of simpler ones.
 
 ### Why Gaussian Mixture Models for Clustering?
 Gaussian Mixture Models are particularly powerful in scenarios where:
@@ -216,6 +216,10 @@ Finally we quantify the echo classification against the ESA official classificat
 [1] Pattern recognition and machine learning. Christopher M. Bishop. 2006.
 
 [2] SOME METHODS FOR CLASSIFICATION AND ANALYSIS OF MULTIVARIATE OBSERVATIONS. J. MACQUEEN. 1967
+
+[3] Reynolds, D. (2009). Gaussian Mixture Models. Encyclopedia of Biometrics, pp.659–663. doi:https://doi.org/10.1007/978-0-387-73003-5_196.
+
+[4] McLachlan, G. and Peel, D. (2004) Finite Mixture Models. Wiley, Hoboken.
 
 [x] Alfred Wegener Institute (AWI) Physical Waveform Alignment
 https://gitlab.awi.de/siteo/aligned-waveform-generator
