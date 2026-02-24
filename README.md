@@ -36,7 +36,7 @@ Student Number: 22170262
 
 Radar echoes from ice leads, are narrow and sharply peaking waveforms, which can be distinguished from the broader waveforms of sea ice. This project uses this to identify ice leads and to hence classify them according to their waveform, and vice versa for sea ice.
 
-This project first uses the Sentinel-2 optical data for unsupervised learning, using K-means clustering and Gaussian Mixture Models. The Sentinel-3 dataset is then used for altimetry classification, where the mean and standard deviation are found for each class, as well as plotting the echoes. 
+This project first uses the Sentinel-2 optical data for unsupervised learning, using K-means clustering and Gaussian Mixture Models. The Sentinel-3 dataset is then used for altimetry classification, this is using the GMM model. The mean and standard deviation are hence found for each class, and the echoes are plotted.
 
 The data obtained is then compared with the ESA data, using a confusion matrix and classification metrics to check precision.
 
