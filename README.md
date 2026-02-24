@@ -2,13 +2,26 @@
 GEOL0069 AI4EO Assignment 4
 Student Number: 22170262
 
-
 ## Aims
 The aim of this assigment is to: 
 >• Classify the echoes in leads and sea ice and produce an average echo shape as well as standard deviation for these two classes.
 
 >• Quantify the echo classification against the ESA official classification using a confusion matrix.
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a>
+    <li><a href="#aims">Aims</a>
+    <li><a href="#Getting-Started---Prerequisites-+-Installation">Getting Started - Prerequisites + Installation</a>
+    <li><a href="#K-Means-and-GMM">K-Means and GMM</a></li>
+    <li><a href="#notebook-roadmap">Notebook Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
 ## Getting Started - Prerequisites + Installation
 ### Prerequisites
