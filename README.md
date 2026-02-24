@@ -147,12 +147,35 @@ The following are produced:
 *    **Histogram** of **peak** positions. The aligned distribution (red) should be narrower.
 *    **Mean waveform per class**. After alignment the mean leading edge becomes sharper because individual waveforms are better registered.
 
+## Compare with ESA data
+We then compare the results obtained with the ESA dataset.
 
+In the ESA dataset, sea ice = 1 and lead = 2. Therefore, we need to subtract 1 from it so our predicted labels are comparable with the official product labels.
+* Code:
+  ```sh
+  flag_cleaned_modified = flag_cleaned - 1
+  from sklearn.metrics import confusion_matrix, classification_report
+  true_labels = flag_cleaned_modified   # true labels from the ESA dataset
+  predicted_gmm = clusters_gmm          # predicted labels from GMM method
+  ```
+### Quantifying the echo classification
+Finally we quantify the echo classification against the ESA official classification using a confusion matrix.
+* Code:
+  ```sh
+  # Compute confusion matrix
+  conf_matrix = confusion_matrix(true_labels, predicted_gmm)
 
+  # Print confusion matrix
+  print("Confusion Matrix:")
+  print(conf_matrix)
 
+  # Compute classification report
+  class_report = classification_report(true_labels, predicted_gmm)
 
-
-
+  # Print classification report
+  print("\nClassification Report:")
+  print(class_report)
+  ```
 
 
 # References
