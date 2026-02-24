@@ -31,7 +31,7 @@ In order to complete the data processing the code needs to be mounted onto Googl
   ```
 #### Sentinel
 # K-Means and GMM
-## K-Means Clustering
+## K-Means Clustering [1]
 K-means clustering is a type of unsupervised learning algorithm used for partitioning a dataset into a set of k groups (or clusters), where k represents the number of groups pre-specified by the analyst. It classifies the data points based on the similarity of the features of the data {cite}macqueen1967some. The basic idea is to define k centroids, one for each cluster, and then assign each data point to the nearest centroid, while keeping the centroids as small as possible.
 
 ### Key Components of K-means
@@ -45,7 +45,13 @@ The assignment and update steps are repeated iteratively until the centroids no 
 ## Gaussian Mixture Models (GMM)
 Gaussian Mixture Models (GMM) are a probabilistic model for representing normally distributed subpopulations within an overall population. The model assumes that the data is generated from a mixture of several Gaussian distributions, each with its own mean and variance {cite}reynolds2009gaussian, mclachlan2004finite. GMMs are widely used for clustering and density estimation, as they provide a method for representing complex distributions through the combination of simpler ones.
 
+# Notebook Roadmap
+
 # References
+[1] Pattern recognition and machine learning. Christopher M. Bishop. 2006.
+
+[2] SOME METHODS FOR CLASSIFICATION AND ANALYSIS OF MULTIVARIATE OBSERVATIONS. J. MACQUEEN. 1967
+
 Alfred Wegener Institute (AWI) Physical Waveform Alignment
 https://gitlab.awi.de/siteo/aligned-waveform-generator
 
